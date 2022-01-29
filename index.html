@@ -1,11 +1,171 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        #bottom-right {
+            position: absolute;
+            bottom: 3%;
+            left: 90%;
+        }
+        .sign-in {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .username {
+            position: fixed;
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .password {
+            position: fixed;
+            top: 55%;
+            left: 40.5%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-in-button {
+            position: fixed;
+            top: 68%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-up-button {
+            position: fixed;
+            top: 75%;
+            left: 39.4%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-in-password {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered1 {
+            position: fixed;
+            top: 11%;
+            left: 52%;
+            transform: translate(-50%, -50%);
+        }
+        .center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .center1 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .username_textbox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .password_textbox {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #border1 {
+            background: rgb(0, 0, 0);
+            width: 700px;
+            height: 500px;
+            border-radius: 20px;
+        }
+        #border2 {
+            background: #B1C4C8;
+            width: 695px;
+            height: 495px;
+            border-radius: 17px;
+        }
+        #username2 {
+            background: #ffffff;
+            width: 325px;
+            height: 45px;
+            border-radius: 8px;
+        }
+        #username1 {
+            background: rgb(0, 0, 0);
+            width: 330px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #password1 {
+            background: #000000;
+            width: 330px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #password2 {
+            background: rgb(252, 252, 252);
+            width: 325px;
+            height: 45px;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hello</h1>
+<body style="background-color:#B1C4C8;">
+    <div class="center">
+        <div id="border1"></div>
+    </div>
+    <div class="center">
+        <div id="border2"></div>
+    </div>
+    <div class="center1">
+        <div id="username1"></div>
+    </div>
+    <div class="center1">
+        <div id="username2"></div>
+    </div>
+    <div class="sign-in-password">
+        <div id="password1"></div>
+    </div>
+    <div class="sign-in-password">
+        <div id="password2"></div>
+    </div>
+
+    <div id="bottom-right">
+        <button onclick="change()">Dark Mode</button>
+    </div>
+    <div class="top-centered1">
+        <h1>Finance Progress</h1>
+    </div>
+    <div class="sign-in">
+        <h1>Sign In</h1>
+    </div>
+
+    <script type="text/javascript" src="toggle.js"></script>
+
+    <form action="/login" method="POST">
+        <div class="username">
+            <label for="email">Email</label>
+        </div>
+        <input type="email" class="username_textbox" name="username" size="27" style="font-size:16pt;">
+        <div class="password">
+            <label for="password">Password</label>
+        </div>
+        <input type="password" class="password_textbox" name="password" size="27" style="font-size:16pt;">
+        <div class="sign-in-button">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+    <div class="sign-up-button">
+        Don't have an account? Sign up here: <a href="/register">Sign Up</a></button>
+    </div>
 </body>
 </html>
