@@ -146,8 +146,8 @@
 <body style="background-color:white;">
 
     <script>
-        // var change = 0;
-        //total = 0;
+        var change = 0;
+        var total = 0;
     </script>
     
     <div class="top-centered2">
@@ -162,8 +162,6 @@
         function change_budget() {
             var change = document.getElementById("change_val").value;
             localStorage.setItem("change_amount",change);
-            var total = 0;
-            total = parseInt(total) + parseInt(localStorage.getItem("change_amount"));
             localStorage.setItem("total_amount",total);
             window.location.href = "financial.html";
         }
@@ -171,6 +169,7 @@
 
     <script>
         var result = localStorage.getItem("storageName");
+        var total = parseInt(total) + parseInt(localStorage.getItem("change_amount"));
     </script>
 
     <div class="top-centered1">
