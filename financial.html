@@ -53,8 +53,20 @@
         }
         .top-centered1 {
             position: fixed;
-            top: 11%;
-            left: 50%;
+            top: 5%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered2 {
+            position: fixed;
+            top: 5%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered3 {
+            position: fixed;
+            top: 5%;
+            left: 80%;
             transform: translate(-50%, -50%);
         }
         .center {
@@ -73,6 +85,18 @@
             position: fixed;
             top: 50%;
             left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .current_budget_change {
+            position: fixed;
+            top: 5%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+        .current_budget_change_button {
+            position: fixed;
+            top: 10%;
+            left: 55%;
             transform: translate(-50%, -50%);
         }
         .password_textbox {
@@ -120,44 +144,51 @@
     </style>
 </head>
 <body style="background-color:white;">
-    <div class="center">
-        <div id="border1"></div>
-    </div>
-    <div class="center">
-        <div id="border2"></div>
-    </div>
-    <div class="center1">
-        <div id="username1"></div>
-    </div>
-    <div class="center1">
-        <div id="username2"></div>
-    </div>
 
-    <div id="bottom-right">
-        <button onclick="change()">Dark Mode</button>
+    <script>
+        // var change = 0;
+        //total = 0;
+    </script>
+    
+    <div class="top-centered2">
+        <p>Change Amount: </p>
     </div>
-    <div class="top-centered1">
-        <h1>Finance Progress</h1>
-    </div>
-    <div class="sign-in">
-        <h1>Sign In</h1>
-    </div>
+    <form id="form" onsubmit="return false;">
+        <input type="number" class="current_budget_change" id="change_val" size="27" style="font-size:16pt;">
+        <input class="current_budget_change_button" type="button" onclick="change_budget();" value="Change Balance" />
+    </form>
+
+    <script>
+        function change_budget() {
+            var change = document.getElementById("change_val").value;
+            localStorage.setItem("change_amount",change);
+            var total = 0;
+            total = parseInt(total) + parseInt(localStorage.getItem("change_amount"));
+            localStorage.setItem("total_amount",total);
+            window.location.href = "financial.html";
+        }
+    </script>
 
     <script>
         var result = localStorage.getItem("storageName");
     </script>
 
-    <script type="text/javascript">
-        document.write(result)
-    </script>
+    <div class="top-centered1">
+        <p>Finance Goal:
+            <script type="text/javascript">
+                document.write(result)
+            </script>
+        </p>
+    </div>
 
-    <form action="/login" method="POST">
-        <div class="username">
-            <label for="number">Financial Goal</label>
-        </div>
-        <script>
-        </script>
-        <input type="number" class="username_textbox" name="username" size="27" style="font-size:16pt;">
-    </form>
+    <div class="top-centered3">
+        <p>Current Budget:
+            <script type="text/javascript">
+                document.write(total)
+            </script>
+        </p>
+    </div>
+    
+
 </body>
 </html>
