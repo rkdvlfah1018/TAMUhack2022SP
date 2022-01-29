@@ -161,15 +161,16 @@
     <script>
         function change_budget() {
             var change = document.getElementById("change_val").value;
-            localStorage.setItem("change_amount",change);
-            localStorage.setItem("total_amount",total);
+            localStorage.setItem("change_amount", change);
+            localStorage.setItem("total_amount", total);
             window.location.href = "financial.html";
         }
     </script>
 
     <script>
         var result = localStorage.getItem("storageName");
-        var total = parseInt(total) + parseInt(localStorage.getItem("change_amount"));
+        total = parseInt(localStorage.getItem("total_amount")) + parseInt(localStorage.getItem("change_amount"));
+        localStorage.setItem("total_amount", total);
     </script>
 
     <div class="top-centered1">
