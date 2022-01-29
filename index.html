@@ -149,10 +149,19 @@
         <div class="username">
             <label for="number">Financial Goal</label>
         </div>
-        <input type="number" class="username_textbox" name="username" size="27" style="font-size:16pt;">
+        <input type="number" class="username_textbox" name="goal_number" size="27" style="font-size:16pt;">
+        <script>
+        if (typeof(Storage) !== "undefined") {
+            // Store
+            localStorage.setItem("financial goal", "goal_number");
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+        }
+        </script>
         <div class="sign-in-button">
-            <button type="submit" class="btn btn-primary">Set Goal!</button>
-            <a href='financial.html?myVar1=42'>a link</a>
+            <a href = "financial.html">
+                <button>Set Goal!</button>
+            </form>
         </div>
     </form>
 </body>
