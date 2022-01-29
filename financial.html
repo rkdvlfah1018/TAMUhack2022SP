@@ -149,6 +149,9 @@
         <div class="username">
             <label for="number">Financial Goal</label>
         </div>
+        <script>
+            document.getElementById("goal_number").innerHTML = localStorage.getItem("goal_number");
+        </script>
         <input type="number" class="username_textbox" name="username" size="27" style="font-size:16pt;">
         <div class="sign-in-button">
             <button type="submit" class="btn btn-primary">Set Goal!</button>
