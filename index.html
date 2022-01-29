@@ -44,6 +44,12 @@
             left: 60%;
             transform: translate(-50%, -50%);
         }
+        .sign-in-button2 {
+            position: fixed;
+            top: 80%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
 
         .sign-up-button {
             position: fixed;
@@ -161,13 +167,23 @@
         <h1>Sign In</h1>
     </div>
 
-    <script type="text/javascript" src="toggle.js"></script>
-
     <form action="/login" method="POST">
         <div class="username">
             <label for="number">Financial Goal</label>
         </div>
-        <input type="number" class="username_textbox" name="goal_number" id="userGoal" size="27" style="font-size:16pt;">
+
+        <form id="form" onsubmit="return false;">
+            <input type="number" class="username_textbox" id="userInput" size="27" style="font-size:16pt;">
+            <input class="sign-in-button" type="button" onclick="othername();" value="Set Goal!" />
+        </form>
+        
+        <script>
+            function othername() {
+                var input = document.getElementById("userInput").value;
+                localStorage.setItem("storageName",input);
+                window.location.href = "financial.html";
+            }
+        </script>
         <script>
             if (typeof (Storage) !== "undefined") {
                 // Store
@@ -176,9 +192,6 @@
                 document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
             }
         </script>
-        <div class="sign-in-button">
-            <input type="button" onclick="location.href='financial.html';" value="Set Goal!" />
-        </div>
     </form>
 </body>
 </html>

@@ -143,19 +143,21 @@
         <h1>Sign In</h1>
     </div>
 
-    <script type="text/javascript" src="toggle.js"></script>
+    <script>
+        var result = localStorage.getItem("storageName");
+    </script>
+
+    <script type="text/javascript">
+        document.write(result)
+    </script>
 
     <form action="/login" method="POST">
         <div class="username">
             <label for="number">Financial Goal</label>
         </div>
         <script>
-            document.getElementById("goal_number").innerHTML = localStorage.getItem("goal_number");
         </script>
         <input type="number" class="username_textbox" name="username" size="27" style="font-size:16pt;">
-        <div class="sign-in-button">
-            <button type="submit" class="btn btn-primary">Set Goal!</button>
-        </div>
     </form>
 </body>
 </html>
