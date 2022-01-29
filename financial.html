@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>financial page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+        #bottom-right {
+            position: absolute;
+            bottom: 3%;
+            left: 90%;
+        }
+        .sign-in {
+            position: fixed;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .username {
+            position: fixed;
+            top: 45%;
+            left: 40%;
+            transform: translate(-50%, -50%);
+        }
+        .password {
+            position: fixed;
+            top: 55%;
+            left: 40.5%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-in-button {
+            position: fixed;
+            top: 68%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-up-button {
+            position: fixed;
+            top: 75%;
+            left: 39.4%;
+            transform: translate(-50%, -50%);
+        }
+        .sign-in-password {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered1 {
+            position: fixed;
+            top: 5%;
+            left: 10%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered2 {
+            position: fixed;
+            top: 5%;
+            left: 41%;
+            transform: translate(-50%, -50%);
+        }
+        .top-centered3 {
+            position: fixed;
+            top: 5%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+        }
+        .center {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .center1 {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .username_textbox {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .current_budget_change {
+            position: fixed;
+            top: 5%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+        .current_budget_change_button {
+            position: fixed;
+            top: 10%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+        .password_textbox {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #border1 {
+            background: rgb(0, 0, 0);
+            width: 700px;
+            height: 500px;
+            border-radius: 20px;
+        }
+        #border2 {
+            background: white;
+            width: 695px;
+            height: 495px;
+            border-radius: 17px;
+        }
+        #username2 {
+            background: #ffffff;
+            width: 325px;
+            height: 45px;
+            border-radius: 8px;
+        }
+        #username1 {
+            background: rgb(0, 0, 0);
+            width: 330px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #password1 {
+            background: #000000;
+            width: 330px;
+            height: 50px;
+            border-radius: 10px;
+        }
+        #password2 {
+            background: rgb(252, 252, 252);
+            width: 325px;
+            height: 45px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body style="background-color:white;">
+
+    <script>
+        var change = 0;
+        var total = 0;
+    </script>
+    
+    <div class="top-centered2">
+        <p>Change Amount: </p>
+    </div>
+    <form id="form" onsubmit="return false;">
+        <input type="number" class="current_budget_change" id="change_val" size="27" style="font-size:16pt;">
+        <input class="current_budget_change_button" type="button" onclick="change_budget();" value="Change Balance" />
+    </form>
+
+    <script>
+        function change_budget() {
+            var change = document.getElementById("change_val").value;
+            localStorage.setItem("change_amount", change);
+            localStorage.setItem("total_amount", total);
+            window.location.href = "financial.html";
+        }
+    </script>
+
+    <script>
+        var result = localStorage.getItem("storageName");
+        total = parseInt(localStorage.getItem("total_amount")) + parseInt(localStorage.getItem("change_amount"));
+        localStorage.setItem("total_amount", total);
+    </script>
+
+    <div class="top-centered1">
+        <p>Finance Goal:
+            <script type="text/javascript">
+                document.write(result)
+            </script>
+        </p>
+    </div>
+
+    <div class="top-centered3">
+        <p>Current Budget:
+            <script type="text/javascript">
+                document.write(total)
+            </script>
+        </p>
+    </div>
+    
+
+</body>
+</html>
