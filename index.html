@@ -10,107 +10,125 @@
             height: 100%;
             margin: 0;
         }
+
         #bottom-right {
             position: absolute;
             bottom: 3%;
             left: 90%;
         }
+
         .sign-in {
             position: fixed;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .username {
             position: fixed;
             top: 45%;
             left: 40%;
             transform: translate(-50%, -50%);
         }
+
         .password {
             position: fixed;
             top: 55%;
             left: 40.5%;
             transform: translate(-50%, -50%);
         }
+
         .sign-in-button {
             position: fixed;
             top: 68%;
             left: 60%;
             transform: translate(-50%, -50%);
         }
+
         .sign-up-button {
             position: fixed;
             top: 75%;
             left: 39.4%;
             transform: translate(-50%, -50%);
         }
+
         .sign-in-password {
             position: fixed;
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .top-centered1 {
             position: fixed;
             top: 11%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .center {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .center1 {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .username_textbox {
             position: fixed;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         .password_textbox {
             position: fixed;
             top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
+
         #border1 {
             background: rgb(0, 0, 0);
             width: 700px;
             height: 500px;
             border-radius: 20px;
         }
+
         #border2 {
             background: white;
             width: 695px;
             height: 495px;
             border-radius: 17px;
         }
+
         #username2 {
             background: #ffffff;
             width: 325px;
             height: 45px;
             border-radius: 8px;
         }
+
         #username1 {
             background: rgb(0, 0, 0);
             width: 330px;
             height: 50px;
             border-radius: 10px;
         }
+
         #password1 {
             background: #000000;
             width: 330px;
             height: 50px;
             border-radius: 10px;
         }
+
         #password2 {
             background: rgb(252, 252, 252);
             width: 325px;
@@ -149,18 +167,25 @@
         <div class="username">
             <label for="number">Financial Goal</label>
         </div>
-        <input type="number" class="username_textbox" name="goal_number" size="27" style="font-size:16pt;">
+        <input type="number" class="username_textbox" name="goal_number" id="userGoal" size="27" style="font-size:16pt;">
         <script>
-        if (typeof(Storage) !== "undefined") {
-            // Store
-            localStorage.setItem("financial goal", "goal_number");
-        } else {
-            document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-        }
+            if (typeof (Storage) !== "undefined") {
+                // Store
+                localStorage.setItem("financial goal", "goal_number");
+            } else {
+                document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+            }
         </script>
         <div class="sign-in-button">
+<<<<<<< HEAD
             <a href="financial.html">Start here to know more...</a>
         </div>
+=======
+            <a href="financial.html">
+                <button>Set Goal!</button>
+    </form>
+    </div>
+>>>>>>> 0fc5b1d3850bddf3000363d6e67540c89825aad3
     </form>
 </body>
 </html>
