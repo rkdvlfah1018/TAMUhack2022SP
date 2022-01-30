@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>financial page</title>
+    <link rel="stylesheet" type ="text/css" href="style.css"/>
     <style>
         body, html {
             height: 100%;
@@ -150,7 +151,7 @@
         var total = 0;
         //var flag = 0;
     </script>
-    
+
     <div class="top-centered2">
         <p>Change Amount: </p>
     </div>
@@ -187,10 +188,13 @@
         }
         localStorage.setItem("total_amount", total);
         localStorage.setItem("change_amount", 0);
+        var percentage = parseInt(localStorage.getItem("total_amount")) / parseInt(localStorage.getItem("storageName"));
+        localStorage.setItem("percent", percentage);
     </script>
 
     <div class="top-centered1">
-        <p>Finance Goal:
+        <p>
+            Finance Goal:
             <script type="text/javascript">
                 document.write(result)
             </script>
@@ -198,13 +202,22 @@
     </div>
 
     <div class="top-centered3">
-        <p>Current Budget:
+        <p>
+            Current Budget:
             <script type="text/javascript">
                 document.write(total)
             </script>
         </p>
     </div>
-    
+
+
+    <div class='flower flower-0'><span></span></div>
+    <div class='flower flower-1'><span></span></div>
+    <div class='flower flower-2'><span></span></div>
+    <div class='flower flower-3'><span></span></div>
+    <div class='flower flower-4'><span></span></div>
+    <div class='flower flower-5'><span></span></div>
+    <div class='flower flower-6'><span></span></div>
 
 </body>
 </html>
