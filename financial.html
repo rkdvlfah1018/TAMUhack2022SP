@@ -148,6 +148,7 @@
     <script>
         var change = 0;
         var total = 0;
+        //var flag = 0;
     </script>
     
     <div class="top-centered2">
@@ -161,16 +162,31 @@
     <script>
         function change_budget() {
             var change = document.getElementById("change_val").value;
+            if (isNaN(change)) {
+                change = 0;
+            }
             localStorage.setItem("change_amount", change);
             localStorage.setItem("total_amount", total);
+            //flag = parseInt(flag) + 1;
+            //localStorage.setItem("Visited_flag", flag);
             window.location.href = "financial.html";
         }
     </script>
 
     <script>
         var result = localStorage.getItem("storageName");
+        /*if (!localStorage.getItem(flag)) { // not the first time
+            total = parseInt(localStorage.getItem("total_amount")) + parseInt(localStorage.getItem("change_amount"));
+        } else {
+            total = 0 + parseInt(localStorage.getItem("change_amount"));
+        }*/
         total = parseInt(localStorage.getItem("total_amount")) + parseInt(localStorage.getItem("change_amount"));
+        if (isNaN(total)) {
+            total = localStorage.getItem("total_amount");
+            //total = 0; To use when there is a NaN or undefined error
+        }
         localStorage.setItem("total_amount", total);
+        localStorage.setItem("change_amount", 0);
     </script>
 
     <div class="top-centered1">
