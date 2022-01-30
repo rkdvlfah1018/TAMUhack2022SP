@@ -293,7 +293,7 @@ body {
         background: #b4d28c;
         width: 0.5em;
         z-index: 5;
-        height: 25em;
+        height: 30em;
         display: block;
         position: absolute;
     }
@@ -454,7 +454,7 @@ html:after {
             display: none;
         }
 
-#flower4 {
+.seventyP#flower4 {
     height: 0em;
     width: 0em;
     left: 33em;
@@ -465,12 +465,37 @@ html:after {
     border: 0em solid #a6d6fa;
     box-shadow: 0 0 0 0em #92cdf9, 0 0 0 0em #88c8f9 inset;
 }
+
+.eightyP#flower4 {
+    height: 0em;
+    width: 0em;
+    left: 33em;
+    opacity: 0;
+    margin-top: 0em;
+    background-color: #75bff8;
+    border-radius: 0em;
+    border: 0em solid #a6d6fa;
+    box-shadow: 0 0 0 0em #92cdf9, 0 0 0 0em #88c8f9 inset;
+}
+
+.ninetyP#flower4 {
+    height: 2em;
+    width: 2em;
+    left: 34em;
+    opacity: 0;
+    margin-top: 0em;
+    background-color: #75bff8;
+    border-radius: 20em;
+    border: 1.2em solid #a6d6fa;
+    box-shadow: 0 0 0 0.2em #92cdf9, 0 0 0 0.2em #88c8f9 inset;
+}
+
 .hundredP#flower4 {
     height: 3em;
     width: 3em;
     left: 33em; 
     opacity: 0;
-    margin-top: 0em;
+    margin-top: 7em;
     background-color: #75bff8;
     border-radius: 15em;
     border: 1.2em solid #a6d6fa;
@@ -481,46 +506,46 @@ html:after {
         top: 40.8em;
         left: 1.3043478261em;
     }
-.tenP#flower4 span {
-    top: 37em;
-    left: 1.3043478261em;
-}
-.twentyP#flower4 span {
-    top: 32em;
-    left: 1.3043478261em;
-}
-.thirtyP#flower4 span {
-    top: 27em;
-    left: 1.3043478261em;
-}
-.fortyP#flower4 span {
-    top: 22em;
-    left: 1.3043478261em;
-}
-.fiftyP#flower4 span {
-    top: 17em;
-    left: 1.3043478261em;
-}
-.sixtyP#flower4 span {
-    top: 12em;
-    left: 1.3043478261em;
-}
-.seventyP#flower4 span {
-    top: 12em;
-    left: 1.3043478261em;
-}
-.eightyP#flower4 span {
-    top: 12em;
-    left: 1.3043478261em;
-}
-.ninetyP#flower4 span {
-    top: 12em;
-    left: 1.3043478261em;
-}
-.hundredP#flower4 span {
-    top: 12em;
-    left: 1.3043478261em;
-}
+    .tenP#flower4 span {
+        top: 37em;
+        left: 1.3043478261em;
+    }
+    .twentyP#flower4 span {
+        top: 32em;
+        left: 1.3043478261em;
+    }
+    .thirtyP#flower4 span {
+        top: 27em;
+        left: 1.3043478261em;
+    }
+    .fortyP#flower4 span {
+        top: 22em;
+        left: 1.3043478261em;
+    }
+    .fiftyP#flower4 span {
+        top: 17em;
+        left: 1.3043478261em;
+    }
+    .sixtyP#flower4 span {
+        top: 12em;
+        left: 1.3043478261em;
+    }
+    .seventyP#flower4 span {
+        top: 12em;
+        left: 1.3043478261em;
+    }
+    .eightyP#flower4 span {
+        top: 12em;
+        left: 1.3043478261em;
+    }
+    .ninetyP#flower4 span {
+        top: 3.4em;
+        left: 0.7em;
+    }
+    .hundredP#flower4 span {
+        top: 4.4em;
+        left: 1.2em;
+    }
 
         #flower4 span:before {
             display: block;
@@ -543,60 +568,60 @@ html:after {
 }
     .zeroP#flower5 span {
         top: 12em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .tenP#flower5 span {
         top:8em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .twentyP#flower5 span {
         top: 3em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .thirtyP#flower5 span {
         top: -2em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .fortyP#flower5 span {
         top: -7em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .fiftyP#flower5 span {
         top: -12em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
     .sixtyP#flower5 span {
         top: -17em;
-        left: 1.7391304348em;
+        left: 50%;
     }
 
 .seventyP#flower5 {
-    height: 0em;
-    width: 0em;
-    left: 46em;
+    height: 1em;
+    width: 1em;
+    left: 50%;
     opacity: 0;
     margin-top: 12em;
     background-color: #d9abff;
-    border-radius: 0em;
-    border: 0em solid #ff89b3;
+    border-radius: 20em;
+    border: 0.2em solid #ff89b3;
     box-shadow: 0 0 0 0em #ff75a6, 0 0 0 0em #e2bfff inset;
 }
 
     .seventyP#flower5 span {
-        top: 4.9em;
-        left: 1.7391304348em;
+        top: 1.2em;
+        left: 0.25em;
     }
 
 .eightyP#flower5 {
     height: 2em;
     width: 2em;
-    left: 50em;
+    left: 50%;
     opacity: 0;
     margin-top: 10em;
     background-color: #d9abff;
@@ -613,7 +638,7 @@ html:after {
 .ninetyP#flower5 {
     height: 3em;
     width: 3em;
-    left: 44em;
+    left: 50%;
     opacity: 0;
     margin-top: 8.5em;
     background-color: #d9abff;
@@ -630,9 +655,9 @@ html:after {
 .hundredP#flower5 {
     height: 4em;
     width: 4em;
-    left: 46em;
+    left: 50%;
     opacity: 0;
-    margin-top: 12em;
+    margin-top: 7em;
     background-color: #d9abff;
     border-radius: 20em;
     border: 0.7em solid #ff89b3;
@@ -644,11 +669,78 @@ html:after {
         left: 1.7391304348em;
     }
 
-        #flower5 span:before {
+        .zeroP#flower5 span::before{
+            display: none;
+        }
+        .tenP#flower5 span::before{
+            display: none;
+        }
+        .twentyP#flower5 span::before{
+            display: none;
+        }
+        .thirtyP#flower5 span::before{
+            display: none;
+        }
+        .fortyP#flower5 span::before{
+            display: none;
+        }
+        .fiftyP#flower5 span:before {
+            display: block;
+        }
+        .sixtyP#flower5 span:before {
+            display: block;
+        }
+        .seventyP#flower5 span:before {
+            display: block;
+        }
+        .eightyP#flower5 span:before {
+            display: block;
+        }
+        .ninetyP#flower5 span:before {
+            display: block;
+        }
+        .hundredP#flower5 span:before {
             display: block;
         }
 
-        #flower5 span:after {
+        .zeroP#flower5 span::after {
+            display: none;
+        }
+
+        .tenP#flower5 span::after {
+            display: none;
+        }
+
+        .twentyP#flower5 span::after {
+            display: none;
+        }
+        .thirtyP#flower5 span:after {
+            display: block;
+        }
+        .fortyP#flower5 span:after {
+            display: block;
+        }
+        .fiftyP#flower5 span:after {
+            display: block;
+        }
+
+        .sixtyP#flower5 span:after {
+            display: block;
+        }
+
+        .seventyP#flower5 span:after {
+            display: block;
+        }
+
+        .eightyP#flower5 span:after {
+            display: block;
+        }
+
+        .ninetyP#flower5 span:after {
+            display: block;
+        }
+
+        .hundredP#flower5 span:after {
             display: block;
         }
 
@@ -822,14 +914,14 @@ html:after {
         -webkit-animation-duration: 2s;
     }
 
-.flower-5 {
+#flower5 {
     -moz-animation-delay: 1.5s;
     -webkit-animation-delay: 1.5s;
     -moz-animation-delay: 1.5s;
     left: 51em;
 }
 
-    .flower-5 span:before {
+    #flower5 span:before {
         -moz-animation-name: turn-right;
         -webkit-animation-name: turn-right;
         -webkit-animation-fill-mode: forwards;
@@ -840,7 +932,7 @@ html:after {
         -webkit-animation-duration: 3s;
     }
 
-    .flower-5 span:after {
+    #flower5 span:after {
         -moz-animation-name: turn-left;
         -webkit-animation-name: turn-left;
         -webkit-animation-fill-mode: forwards;
