@@ -177,7 +177,7 @@ body {
     background: #d2d2b4;
 }
 
-.flower {
+.flowers {
     -moz-animation-name: grow;
     -webkit-animation-name: grow;
     -webkit-animation-fill-mode: forwards;
@@ -191,16 +191,114 @@ body {
     z-index: 10;
 }
 
-    .flower span {
+    .zeroP.flowers span {
         background: #b4d28c;
         width: 0.5em;
         z-index: 5;
-        height: 50em;
+        height: 1em;
         display: block;
         position: absolute;
     }
 
-        .flower span:after {
+    .tenP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 5em;
+        display: block;
+        position: absolute;
+    }
+
+    .twentyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 10em;
+        display: block;
+        position: absolute;
+    }
+
+    .thirtyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 15em;
+        display: block;
+        position: absolute;
+    }
+
+    .fortyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 20em;
+        display: block;
+        position: absolute;
+    }
+
+    .fiftyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 25em;
+        display: block;
+        position: absolute;
+    }
+
+    .sixtyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 30em;
+        display: block;
+        position: absolute;
+    }
+
+    .seventyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 30em;
+        display: block;
+        position: absolute;
+    }
+
+    .eightyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 30em;
+        display: block;
+        position: absolute;
+    }
+
+    .ninetyP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 30em;
+        display: block;
+        position: absolute;
+    }
+
+    .hundredP.flowers span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 30em;
+        display: block;
+        position: absolute;
+    }
+    .hundredP#flower5 span {
+        background: #b4d28c;
+        width: 0.5em;
+        z-index: 5;
+        height: 25em;
+        display: block;
+        position: absolute;
+    }
+
+        .flowers span:after {
             content: '';
             transform: rotateY(-140deg);
             -moz-transform: rotateY(-140deg);
@@ -220,7 +318,7 @@ body {
             position: absolute;
         }
 
-        .flower span:before {
+        .flowers span:before {
             transform: rotateY(140deg);
             -moz-transform: rotateY(140deg);
             -webkit-transform: rotateY(140deg);
@@ -257,7 +355,7 @@ html:after {
     background: #c7c7a1;
 }
 
-.flower-0 {
+#flower0 {
     height: 4em;
     width: 4em;
     opacity: 0;
@@ -268,22 +366,23 @@ html:after {
     box-shadow: 0 0 0 0.2em #f7bc62, 0 0 0 0.2em #f5f988 inset;
 }
 
-    .flower-0 span {
+    #flower0 span {
         top: 5.2em;
         left: 1.7391304348em;
     }
 
-        .flower-0 span:before {
+        #flower0 span:before {
             display: block;
         }
 
-        .flower-0 span:after {
+        #flower0 span:after {
             display: none;
         }
 
-.flower-1 {
+#flower1 {
     height: 6em;
     width: 6em;
+    left: 5em;
     opacity: 0;
     margin-top: 1em;
     background-color: #a6d6fa;
@@ -292,22 +391,23 @@ html:after {
     box-shadow: 0 0 0 0.2em #62b6f7, 0 0 0 0.2em #b9dffb inset;
 }
 
-    .flower-1 span {
+    #flower1 span {
         top: 7.2em;
         left: 2.6086956522em;
     }
 
-        .flower-1 span:before {
+        #flower1 span:before {
             display: block;
         }
 
-        .flower-1 span:after {
+        #flower1 span:after {
             display: block;
         }
 
-.flower-2 {
+#flower2 {
     height: 3em;
     width: 3em;
+    left: 13em;
     opacity: 0;
     margin-top: 0em;
     background-color: #f8c475;
@@ -316,22 +416,23 @@ html:after {
     box-shadow: 0 0 0 0.2em #f76262, 0 0 0 0.2em #f9cc88 inset;
 }
 
-    .flower-2 span {
+    #flower2 span {
         top: 4.4em;
         left: 1.3043478261em;
     }
 
-        .flower-2 span:before {
+        #flower2 span:before {
             display: none;
         }
 
-        .flower-2 span:after {
+        #flower2 span:after {
             display: none;
         }
 
-.flower-3 {
+#flower3 {
     height: 2em;
     width: 2em;
+    left: 20em;
     opacity: 0;
     margin-top: 3em;
     background-color: #f87575;
@@ -340,22 +441,34 @@ html:after {
     box-shadow: 0 0 0 0.2em #f7bc62, 0 0 0 0.2em #f98888 inset;
 }
 
-    .flower-3 span {
+    #flower3 span {
         top: 5.2em;
         left: 0.8695652174em;
     }
 
-        .flower-3 span:before {
+        #flower3 span:before {
             display: block;
         }
 
-        .flower-3 span:after {
+        #flower3 span:after {
             display: none;
         }
 
-.flower-4 {
+#flower4 {
+    height: 0em;
+    width: 0em;
+    left: 33em;
+    opacity: 0;
+    margin-top: 0em;
+    background-color: #75bff8;
+    border-radius: 0em;
+    border: 0em solid #a6d6fa;
+    box-shadow: 0 0 0 0em #92cdf9, 0 0 0 0em #88c8f9 inset;
+}
+.hundredP#flower4 {
     height: 3em;
     width: 3em;
+    left: 33em; 
     opacity: 0;
     margin-top: 0em;
     background-color: #75bff8;
@@ -364,42 +477,181 @@ html:after {
     box-shadow: 0 0 0 0.2em #92cdf9, 0 0 0 0.2em #88c8f9 inset;
 }
 
-    .flower-4 span {
-        top: 4.4em;
+    .zeroP#flower4 span {
+        top: 40.8em;
         left: 1.3043478261em;
     }
+.tenP#flower4 span {
+    top: 37em;
+    left: 1.3043478261em;
+}
+.twentyP#flower4 span {
+    top: 32em;
+    left: 1.3043478261em;
+}
+.thirtyP#flower4 span {
+    top: 27em;
+    left: 1.3043478261em;
+}
+.fortyP#flower4 span {
+    top: 22em;
+    left: 1.3043478261em;
+}
+.fiftyP#flower4 span {
+    top: 17em;
+    left: 1.3043478261em;
+}
+.sixtyP#flower4 span {
+    top: 12em;
+    left: 1.3043478261em;
+}
+.seventyP#flower4 span {
+    top: 12em;
+    left: 1.3043478261em;
+}
+.eightyP#flower4 span {
+    top: 12em;
+    left: 1.3043478261em;
+}
+.ninetyP#flower4 span {
+    top: 12em;
+    left: 1.3043478261em;
+}
+.hundredP#flower4 span {
+    top: 12em;
+    left: 1.3043478261em;
+}
 
-        .flower-4 span:before {
+        #flower4 span:before {
             display: block;
         }
 
-        .flower-4 span:after {
+        #flower4 span:after {
             display: none;
         }
 
-.flower-5 {
-    height: 4em;
-    width: 4em;
+#flower5 {
+    height: 0em;
+    width: 0em;
+    left: 46em;
     opacity: 0;
-    margin-top: 2em;
+    margin-top: 30em;
+    background-color: #d9abff;
+    border-radius: 0em;
+    border: 0em solid #ff89b3;
+    box-shadow: 0 0 0 0em #ff75a6, 0 0 0 0em #e2bfff inset;
+}
+    .zeroP#flower5 span {
+        top: 12em;
+        left: 1.7391304348em;
+    }
+
+    .tenP#flower5 span {
+        top:8em;
+        left: 1.7391304348em;
+    }
+
+    .twentyP#flower5 span {
+        top: 3em;
+        left: 1.7391304348em;
+    }
+
+    .thirtyP#flower5 span {
+        top: -2em;
+        left: 1.7391304348em;
+    }
+
+    .fortyP#flower5 span {
+        top: -7em;
+        left: 1.7391304348em;
+    }
+
+    .fiftyP#flower5 span {
+        top: -12em;
+        left: 1.7391304348em;
+    }
+
+    .sixtyP#flower5 span {
+        top: -17em;
+        left: 1.7391304348em;
+    }
+
+.seventyP#flower5 {
+    height: 0em;
+    width: 0em;
+    left: 46em;
+    opacity: 0;
+    margin-top: 12em;
+    background-color: #d9abff;
+    border-radius: 0em;
+    border: 0em solid #ff89b3;
+    box-shadow: 0 0 0 0em #ff75a6, 0 0 0 0em #e2bfff inset;
+}
+
+    .seventyP#flower5 span {
+        top: 4.9em;
+        left: 1.7391304348em;
+    }
+
+.eightyP#flower5 {
+    height: 2em;
+    width: 2em;
+    left: 50em;
+    opacity: 0;
+    margin-top: 10em;
+    background-color: #d9abff;
+    border-radius: 20em;
+    border: 0.4em solid #ff89b3;
+    box-shadow: 0 0 0 0.2em #ff75a6, 0 0 0 0.2em #e2bfff inset;
+}
+
+    .eightyP#flower5 span {
+        top:  2.6em;
+        left: 0.7em;
+    }
+
+.ninetyP#flower5 {
+    height: 3em;
+    width: 3em;
+    left: 44em;
+    opacity: 0;
+    margin-top: 8.5em;
     background-color: #d9abff;
     border-radius: 20em;
     border: 0.7em solid #ff89b3;
     box-shadow: 0 0 0 0.2em #ff75a6, 0 0 0 0.2em #e2bfff inset;
 }
 
-    .flower-5 span {
+    .ninetyP#flower5 span {
+        top: 3.9em;
+        left: 1.3em;
+    }
+
+.hundredP#flower5 {
+    height: 4em;
+    width: 4em;
+    left: 46em;
+    opacity: 0;
+    margin-top: 12em;
+    background-color: #d9abff;
+    border-radius: 20em;
+    border: 0.7em solid #ff89b3;
+    box-shadow: 0 0 0 0.2em #ff75a6, 0 0 0 0.2em #e2bfff inset;
+}
+
+    .hundredP#flower5 span {
         top: 4.9em;
         left: 1.7391304348em;
     }
 
-        .flower-5 span:before {
+        #flower5 span:before {
             display: block;
         }
 
-        .flower-5 span:after {
+        #flower5 span:after {
             display: block;
         }
+
 
 .flower-6 {
     height: 5em;

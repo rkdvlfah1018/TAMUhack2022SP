@@ -188,7 +188,7 @@
         }
         localStorage.setItem("total_amount", total);
         localStorage.setItem("change_amount", 0);
-        var percentage = parseInt(localStorage.getItem("total_amount")) / parseInt(localStorage.getItem("storageName"));
+        var percentage = parseFloat(localStorage.getItem("total_amount")) / parseFloat(localStorage.getItem("storageName"));
         localStorage.setItem("percent", percentage);
     </script>
 
@@ -211,13 +211,99 @@
     </div>
 
 
-    <div class='flower flower-0'><span></span></div>
-    <div class='flower flower-1'><span></span></div>
-    <div class='flower flower-2'><span></span></div>
-    <div class='flower flower-3'><span></span></div>
-    <div class='flower flower-4'><span></span></div>
-    <div class='flower flower-5'><span></span></div>
-    <div class='flower flower-6'><span></span></div>
+    <!--<div class='flower flower-0' id="0p"><span></span></div>
+    <div class='flower flower-1' id="0p"><span></span></div>
+    <div class='flower flower-2' id="0p"><span></span></div>
+    <div class='flower flower-3' id="0p"><span></span></div>
+    <div class='flower flower-4' id="0p"><span></span></div>
+    <div class='flower flower-5' id="0p"><span></span></div>
+    <div class='flower flower-6' id="0p"><span></span></div>-->
+
+    <div class='flowers zeroP' id="flower0"><span></span></div>
+    <div class='flowers zeroP' id="flower1"><span></span></div>
+    <div class='flowers zeroP' id="flower2"><span></span></div>
+    <div class='flowers zeroP' id="flower3"><span></span></div>
+    <div class='flowers zeroP' id="flower4"><span></span></div>
+    <div class='flowers zeroP' id="flower5"><span></span></div>
+
+    <script>
+        var flowers = document.querySelectorAll(".flowers");
+        if (localStorage.getItem("percent") < 0.1) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("zeroP");
+            }
+        }else if (localStorage.getItem("percent") >= 0.1 && localStorage.getItem("percent") < 0.2) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("tenP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.2 && localStorage.getItem("percent") < 0.3) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("twentyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.3 && localStorage.getItem("percent") < 0.4) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("thirtyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.4 && localStorage.getItem("percent") < 0.5) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("fortyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.5 && localStorage.getItem("percent") < 0.6) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("fiftyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.6 && localStorage.getItem("percent") < 0.7) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("sixtyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.7 && localStorage.getItem("percent") < 0.8) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("seventyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.8 && localStorage.getItem("percent") < 0.9) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("eightyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else if (localStorage.getItem("percent") >= 0.9 && localStorage.getItem("percent") < 1) {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("ninetyP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        } else {
+            for (let i = 0; i < flowers.length; i++) {
+                flowers[i].classList.add("hundredP");
+                if (flowers[i].classList.contains("zeroP")) {
+                    flowers[i].classList.remove("zeroP");
+                }
+            }
+        }
+    </script>
 
 </body>
 </html>
